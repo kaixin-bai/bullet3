@@ -143,3 +143,26 @@ You can use mouse picking to grab objects. When holding the ALT or CONTROL key, 
 Press F1 to create a series of screenshots. Hit ESCAPE to exit the demo app.
 
 Check out the docs folder and the Bullet physics forums for further information.
+
+
+# 运行案例时的报错与修改记录
+## 依赖项更新
+```buildoutcfg
+gym==0.18.0
+pyserial  # not serial!!
+```
+
+## 记录
+---
+在运行`examples/pybullet/examples/hand.py`时，报错如下：
+```buildoutcfg
+AttributeError module 'serial' has no attribute 'Serial'
+```
+解决方案为，python的包serial不包含我们需要的内容，但是pyserial包含我们需要的内容：
+```buildoutcfg
+pip3 uninstall serial
+pip3 uninstall pyserial
+
+pip3 install pyserial
+```
+---
