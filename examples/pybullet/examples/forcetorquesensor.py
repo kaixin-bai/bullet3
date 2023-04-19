@@ -25,4 +25,6 @@ p.stepSimulation()
 print("joint state with force/torque sensor, no gravity")
 print(p.getJointState(0, 0))
 
+import time
+time.sleep(10)
 p.disconnect()
