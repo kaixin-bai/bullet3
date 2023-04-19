@@ -166,3 +166,4 @@ pip3 uninstall pyserial
 pip3 install pyserial
 ```
 ---
+`examples/pybullet/examples/experimentalCcdSphereRadius.py`此脚本是从上方落下物体的仿真，且此仿真中物体在落下后不会一直抖动，注意此脚本中是如何设置物体的摩擦和damping参数的。
