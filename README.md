@@ -13,7 +13,8 @@ The Issue tracker was flooded with support questions and is closed until it is c
 ## PyBullet ##
 It is highly recommended to use PyBullet Python bindings for improved support for robotics, reinforcement learning and VR. Use pip install pybullet and checkout the [PyBullet Quickstart Guide](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3).
 
-Installation is simple:
+Installation is simple:  
+注意：这里根据[此链接](https://github.com/bulletphysics/bullet3/issues/4368),gym的版本需要为`0.18.0`
 ```
 pip3 install pybullet --upgrade --user
 python3 -m pybullet_envs.examples.enjoy_TF_AntBulletEnv_v0_2017may
